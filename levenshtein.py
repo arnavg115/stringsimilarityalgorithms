@@ -31,8 +31,8 @@ lev1 = levdist(str1,str2,mat1)
 lev2 = levdist(str1,str3,mat2)
 lst3 = [str2,lev1]
 lst2 = [str3,lev2]
-n = min(lev1,lev2)
-if n in lst3:
-    print("String two is more similar to String 1 than String 3.")
-elif n in lst2:
-    print("String three is more similar to String 1 than String 2.")
+ng = min(lev1,lev2)
+if ng in lst3:
+    print("String 1 is more similar to String 2 than String 3. \n The levenshtein distance is "+str(ng))
+elif ng in lst2:
+    print("String 1 is more similar to String 3 than String 3.\n The levenshtein distance is "+str(ng))
